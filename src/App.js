@@ -1,9 +1,13 @@
 import './App.css';
+import Loader from './Loader';
+import User from './User';
 
 function App() {
+  const UserLoader = Loader(User);
+
   return (
     <div className='App'>
-      <header className='App-header'></header>
+      <UserLoader />
     </div>
   );
 }
